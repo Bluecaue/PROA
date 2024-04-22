@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 7</title>
+</head>
+
+<body>
+    <script>
+        let soma = 0
+        // Quando deixa um prompt vazio ele adiciona 5 nao sei o pq
+
+        for (i = 0; i < 6; i++) {
+            let numero = parseFloat(prompt("Digite um numero: "))
+
+            if (numero < 72) {
+                soma += numero;
+            }
+
+
+            document.write("Numero escolhido: " + numero++ + "<br>")
+        }
+        document.write("A soma dos números inferiores a 72 é: ", soma)
+
+
+    </script>
+</body>
+
+</html>

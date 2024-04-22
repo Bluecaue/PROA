@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 4 Codar 2</title>
+</head>
+
+<body>
+    <script>
+        let numeroLados = parseInt(prompt("Informe o número de lados do polígono regular: "));
+        let medidaLado = parseFloat(prompt("Informe a medida do lado: "));
+
+        if (numeroLados === 3) {
+            let perimetro = 3 * medidaLado;
+            document.write("TRIÂNGULO <br> Perímetro: " + perimetro + " cm");
+        } else if (numeroLados === 4) {
+            let area = medidaLado ** 2;
+            document.write("QUADRADO <br> Área: " + area + " cm cubico");
+        } else if (numeroLados === 5) {
+            document.write("PENTÁGONO");
+        } else if (numeroLados < 3) {
+            document.write("NÃO É UM POLÍGONO");
+        } else {
+            document.write("POLÍGONO NÃO IDENTIFICADO");
+        }
+    </script>
+</body>
+
+</html>

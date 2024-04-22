@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR 40</title>
+</head>
+<body>
+    <script>
+        let anterior = 0;
+        let atual = 1;
+        let contador = 0;
+
+        document.write("Os primeiros 20 numeros de Fibonacci são:<br>")
+
+
+        for(contador = 0; contador < 20; contador++){
+        document.write(anterior + "<br>");
+        
+
+        let proximo = anterior + atual
+        anterior = atual
+        atual = proximo
+        }
+    </script>
+</body>
+</html>
