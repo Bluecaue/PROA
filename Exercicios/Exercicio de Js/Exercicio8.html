@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+</head>
+<script>
+    let porcentagemIPI = parseInt(prompt("Porcentagem do IPI a ser adicionado no valor da peças: "))
+
+    let codigoPeca1 = parseInt(prompt("Código da peça 1:"))
+    let valorPeca1 = parseInt(prompt("Valor da peça 1:"))
+    let quantidadePeca1 = parseInt(prompt("Quantidade da peça 1:"))
+
+    let codigoPeca2 = parseInt(prompt("Código da peça 2:"))
+    let valorPeca2 = parseInt(prompt("Valor da peça 2:"))
+    let quantidadePeca2 = parseInt(prompt("Quantidade da peça 2:"))
+
+    let valorTotal = (valorPeca1 * quantidadePeca1 + valorPeca2 * quantidadePeca2) * (porcentagemIPI / 100 + 1)
+
+    document.write("O valor total a se pagar é: " + valorTotal.toFixed(2))
+</script>
+
+<body>
+
+</body>
+
+</html>

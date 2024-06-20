@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<script>
+    function Calorias(produto, opcaoEscolhida) {
+        
+        switch (produto) {
+            case "prato":
+                switch (opcaoEscolhida) {
+                    // Pratos:
+                    case 1: // Vegetariano
+                        return 180 
+                    case 2: // Peixe
+                        return 230
+                    case 3: // Frango
+                        return 250
+                    case 4: // Carne
+                        return 350
+                }
+
+            case "sobremesa":
+                switch (opcaoEscolhida) {
+                    // Sobremesas
+                    case 1: // Abacaxi
+                        return 75
+                    case 2: // Sorvet diet
+                        return 110
+                    case 3: // Mousse diet
+                        return 170
+                    case 4: // Mousse chocolate
+                        return 200
+                }
+
+            case "bebida":
+                switch (opcaoEscolhida) {
+                    // Bebidas
+                    case 1: // Chá
+                        return 20
+                    case 2: // Suco de laranja
+                        return 70
+                    case 3: // Suco de melão
+                        return 100
+                    case 4: // Refrigerante diet
+                        return 65
+                }
+        }
+    }
+
+    let prato = parseInt(prompt("Digite o prato que deseja: \n1- Vegetariano \n2- Peixe \n3- Frango \n4- Carne"))
+    let sobremesa = parseInt(prompt("Digite a sobremesa que deseja: \n1- Abacaxi \n2- Sorvet diet \n3- Mouse diet \n4- Mouse chocolate"))
+    let bebida = parseInt(prompt("Digite a bebida que deseja: \n1- Chá \n2- Suco de laranja \n3- Suco de melão \n4- Refrigerante diet"))
+
+    let caloriasPrato = Calorias("prato", prato)
+    let caloriasSobremesa = Calorias("sobremesa", sobremesa)
+    let caloriasBebida = Calorias("bebida", bebida)
+
+    let caloriasTotais = caloriasPrato + caloriasSobremesa + caloriasBebida
+
+    document.write("Calorias do prato escolhido : " + caloriasPrato + "<br>Calorias da sobremesa escolhida: " + caloriasSobremesa + "<br>Calorias da bebida escolhida: " + caloriasBebida + "<br>Calorias totais: " + caloriasTotais)
+</script>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<script>
+
+    let SaldoMedio = parseInt(prompt("Digite seu saldo médio: "))
+
+    if (SaldoMedio < 501) {
+        document.write("Sem crédito");
+    }
+    else if (SaldoMedio > 501 && SaldoMedio < 1001) {
+        document.write("30% de crédito");
+    }
+    else if (SaldoMedio > 1000 && SaldoMedio < 3001) {
+        document.write("40% de crédito");
+    }
+    else if (SaldoMedio > 3001) {
+        document.write("50% de crédito");
+    }
+    else {
+        document.write("Número inválido");
+    }
+</script>
+
+<body>
+
+</body>
+
+</html>

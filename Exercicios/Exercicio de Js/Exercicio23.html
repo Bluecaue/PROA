@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 23</title>
+</head>
+<script>
+    let n1
+    let Quantidade = 0
+    let Entres = 0
+    let Maiores = 0
+
+    for (contador = 0; contador < 20; contador++) {
+        n1 = parseInt(prompt("Digite um número: "))
+
+        if (n1 > 0 && n1 < 100) {
+            Quantidade++
+        }
+        else if (n1 >= 100 && n1 <= 200) {
+            Entre++
+        }
+        else if (n1 > 200) {
+            Maior++
+        }
+    }
+
+    document.write("Quantidade de números entre 0 e 100: " + Quantidade + "<br>Quantidade de números entre 100 e 200: " + Entre + "<br>Quantidade de números maior que 200 " + Maior)
+</script>
+
+<body>
+
+</body>
+
+</html>
